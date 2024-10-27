@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* Background Color */
+.background-color {
+  background-color: #ffcc00; /* Yellow background */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Background Color Fallback */
+.background-fallback {
+  background-color: #cccccc; /* Light gray */
+  background: linear-gradient(to right, #cccccc, #999999); /* Fallback to gradient */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* RGB Hover Effect */
+.rgb-hover {
+  color: #000; /* Black text */
+}
+.rgb-hover:hover {
+  background-color: rgb(100, 150, 255); /* Light blue background */
+}
+
+/* RGB Text Color */
+.rgb-text {
+  color: rgb(34, 139, 34); /* Forest green text */
+}
+
+/* RGB Border */
+.rgb-border {
+  border: 2px solid rgb(255, 69, 0); /* Red border */
+  padding: 10px;
+  margin: 10px;
+}
+
+/* HSL Button */
+.hsl-button {
+  background-color: hsl(120, 50%, 50%); /* Green button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.hsl-button:hover {
+  background-color: hsl(120, 50%, 40%); /* Darker green on hover */
+}
+
+/* HSL Gradient */
+.hsl-gradient {
+  background: linear-gradient(to right, hsl(200, 70%, 60%), hsl(220, 70%, 40%)); /* Blue gradient */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hex Hover */
+.hex-hover {
+  color: #333333;
+}
+.hex-hover:hover {
+  color: #ff6600; /* Orange text on hover */
+}
+
+/* Hex Color Div */
+.hex-div {
+  background-color: #00ccff; /* Sky blue */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Hex Gradient */
+.hex-gradient {
+  background: linear-gradient(to bottom, #ff66b2, #ffccff); /* Pink gradient */
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}

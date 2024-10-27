@@ -1,0 +1,52 @@
+.background-basic {
+  background-color: #f0f8ff; /* Alice blue */
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Background Image */
+.background-image {
+  background-image: url('Images/simplebg.jpg');
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+  text-align: center;
+  color: #000000;
+  margin: 10px 0;
+}
+
+
+/* Background Position */
+.background-position {
+  background-image: url('Images/bg.jpg');
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat;
+  padding: 100px;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Background Size */
+.background-size {
+  background-image: url('https://via.placeholder.com/300');
+  background-size: cover; /* Image covers entire div */
+  background-position: center;
+  padding: 60px;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Background Repeat */
+.background-repeat {
+  background-image: url('https://via.placeholder.com/50');
+  background-repeat: repeat; /* Repeats image */
+  padding: 60px;
+  text-align: center;
+  color: #333;
+  margin: 10px 0;
+}

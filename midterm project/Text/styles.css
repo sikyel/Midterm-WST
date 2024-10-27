@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Text Color */
+.text-color {
+  color: #333333; /* Dark Gray */
+}
+
+/* Text Alignment */
+.alignment {
+  text-align: center;
+}
+
+/* Text Formatting */
+.text-format {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Text Spacing */
+.text-spacing {
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  line-height: 1.5;
+}
+
+/* Text Indentation */
+.indentation {
+  text-indent: 30px;
+}
+
+/* Letter Spacing */
+.letter-spacing {
+  letter-spacing: 3px;
+}
+
+/* Line Height */
+.line-height {
+  line-height: 1.8;
+}
+
+/* Word Spacing */
+.word-spacing {
+  word-spacing: 5px;
+}
+
+/* White Space */
+.white-space {
+  white-space: nowrap; /* Keeps text in one line */
+}
+
+/* Text Shadow */
+.shadow {
+  text-shadow: 2px 2px 4px rgba(10, 1, 1, 0.3);
+}
+
+/* Text Decoration */
+.decoration {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+}
+
+/* Text Transformation */
+.transformation {
+  text-transform: uppercase;
+}
