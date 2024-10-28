@@ -1,0 +1,47 @@
+/*Transition base*/
+.transition-box{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: green;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.3s ease; /*Base transition*/
+}
+
+.transition-delay{
+  transition-delay: 0.5s;
+}
+
+.transition-delay:hover{
+  background-color: #ff6347;
+}
+
+.transition-duration{
+  transition-duration: 1.5s;
+}
+
+.transition-duration:hover{
+  background-color: dodgerblue;
+}
+
+.transition-property{
+  transition-property: width;
+  transition-duration: 0.5s;
+}
+
+.transition-property:hover{
+  width: 200px;
+}
+
+.transition-timing-function{
+  transition-timing-function: ease;
+}
+
+.transition-timing-function:hover{
+  background-color: gold;
+}
