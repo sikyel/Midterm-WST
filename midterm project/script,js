@@ -1,15 +1,26 @@
-function toggleSection(sectionId) {
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        if (section.id === sectionId) {
-            section.style.display = section.style.display === 'block' ? 'none' : 'block';
-        } else {
-            section.style.display = 'none';
-        }
-    });
-}
+function showTutorial(Topic) {
+    const tutorialDisplay = document.getElementById('Topic');
+    let Topic;
 
-function toggleSubsection(subsectionId) {
-    const subsection = document.getElementById(subsectionId);
-    subsection.style.display = subsection.style.display === 'block' ? 'none' : 'block';
+    // Define hobbies for each member
+    switch (Topic) {
+        case 'Background':
+            window.location.href = "Backgrounds/BackgroundTutorial.html"; // Change to your destination file
+            break;
+        case 'Colors':
+            window.location.href = "Colors/ColorsTutorial.html"; // Change to your destination file
+            break;
+        case 'Text':
+            window.location.href = 'Text/TextTutorial.html';
+            break;
+        case 'Transition':
+            window.location.href = 'Transitions/TranstionTutorial.html';
+            break;
+        default:
+            Topics = '';
+    }
+
+    // Update the hobbies display
+    tutorialDisplay.textContent = Topics;
+    tutorialDisplay.style.display = 'block'; // Show the hobbies
 }
