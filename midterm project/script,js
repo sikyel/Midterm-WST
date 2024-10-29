@@ -1,26 +1,25 @@
-function showTutorial(Topic) {
+function showTutorial(topic) {
     const tutorialDisplay = document.getElementById('Topic');
-    let Topic;
 
-    // Define hobbies for each member
-    switch (Topic) {
+    // Define actions for each topic
+    switch (topic) {
         case 'Background':
-            window.location.href = "Backgrounds/BackgroundTutorial.html"; // Change to your destination file
+            window.location.href = "Backgrounds/BackgroundTutorial.html";
             break;
         case 'Colors':
-            window.location.href = "Colors/ColorsTutorial.html"; // Change to your destination file
+            window.location.href = "Colors/ColorsTutorial.html";
             break;
         case 'Text':
             window.location.href = 'Text/TextTutorial.html';
             break;
         case 'Transition':
-            window.location.href = 'Transitions/TranstionTutorial.html';
+            window.location.href = 'Transitions/TransitionTutorial.html';
             break;
         default:
-            Topics = '';
+            topic = '';
     }
 
-    // Update the hobbies display
-    tutorialDisplay.textContent = Topics;
-    tutorialDisplay.style.display = 'block'; // Show the hobbies
+    // Update the display with the chosen topic
+    tutorialDisplay.textContent = topic;
+    tutorialDisplay.style.display = 'block';
 }
