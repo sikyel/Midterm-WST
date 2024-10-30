@@ -12,14 +12,10 @@
         <div class="container">
             <h1>Kuromi's Kawaii Corner</h1>
             <div class="kuromi-image"></div> <!-- Replace with actual Kuromi image path -->
-            <nav>
-                <ul>
-                    <li><a href='/Colors/.ColorsTutorial.html ' onclick="tutorialDisplay('Colors')">Colors Tutorial</a></li>
-                    <li><a href="Text " onclick="tutorialDisplay('Text')">Text</a></li>
-                    <li><a href="Transition " onclick="tutorialDisplay('Transition')">Transition</a></li>
-                    <li><a href="Background " onclick="tutorialDisplay('Background')">Background</a></li>
-                </ul>
-            </nav>
+            <button onclick="showTutorial('Background')">Background</button>
+            <button onclick="showTutorial('Colors')">Colors</button>
+            <button onclick="showTutorial('Text')">Text</button>
+            <button onclick="showTutorial('Transition')">Transition</button>
         </div>
     </header>
 
@@ -33,14 +29,15 @@
             <h3>Quick Links</h3>
             <p>Find more cute content and surprises on Kuromi's official pages.</p>
         </aside>
-    <div class="Topics" id="Topics"></div>
+
+        <!-- Display area for the tutorial topics -->
+        <div id="Topics" class="Topics" style="display: none; margin-top: 20px; font-weight: bold;"></div>
     </main>
 
     <footer>
         <div class="container"> 
-            <p>&copy; All credits to kuromi.</p>
+            <p>&copy; All credits to Kuromi.</p>
         </div>
     </footer>
 </body>
 </html>
-

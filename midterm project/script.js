@@ -1,5 +1,5 @@
 function showTutorial(topic) {
-    const tutorialDisplay = document.getElementById('Topic');
+    const tutorialDisplay = document.getElementById('Topics');
 
     // Define actions for each topic
     switch (topic) {
@@ -16,10 +16,12 @@ function showTutorial(topic) {
             window.location.href = 'Transitions/TransitionTutorial.html';
             break;
         default:
-            topic = '';
+            topic = 'Select a valid tutorial';
     }
 
     // Update the display with the chosen topic
     tutorialDisplay.textContent = topic;
     tutorialDisplay.style.display = 'block';
 }
+console.log("Script loaded");
+
