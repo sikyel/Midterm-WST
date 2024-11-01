@@ -1,27 +1,32 @@
 function showTutorial(topic) {
     const tutorialDisplay = document.getElementById('Topics');
+    const loadingScreen = document.getElementById('loadingScreen');
 
-    // Define actions for each topic
-    switch (topic) {
-        case 'Background':
-            window.location.href = "Backgrounds/BackgroundTutorial.html";
-            break;
-        case 'Colors':
-            window.location.href = "Colors/ColorsTutorial.html";
-            break;
-        case 'Text':
-            window.location.href = 'Text/TextTutorial.html';
-            break;
-        case 'Transition':
-            window.location.href = 'Transitions/TransitionTutorial.html';
-            break;
-        default:
-            topic = 'Select a valid tutorial';
-    }
+    loadingScreen.classList.add('active');
 
-    // Update the display with the chosen topic
-    tutorialDisplay.textContent = topic;
-    tutorialDisplay.style.display = 'block';
+    setTimeout(() => {
+        switch (topic) {
+            case 'Background':
+                window.location.href = "Backgrounds/BackgroundTutorial.html";
+                break;
+            case 'Colors':
+                window.location.href = "Colors/ColorsTutorial.html";
+                break;
+            case 'Text':
+                window.location.href = 'Text/TextTutorial.html';
+                break;
+            case 'Transition':
+                window.location.href = 'Transitions/TransitionTutorial.html';
+                break;
+            default:
+                topic = 'Select a valid tutorial';
+                loadingScreen.classList.remove('active');
+        }
+
+        tutorialDisplay.textContent = topic;
+        tutorialDisplay.style.display = 'block';
+    }, 800);
 }
+
 console.log("Script loaded");
 
