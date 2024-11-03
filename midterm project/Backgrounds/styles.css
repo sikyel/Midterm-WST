@@ -1,52 +1,85 @@
+/* Basic Background Style */
+/* Choose background color, padding, text alignment, and margin */
 .background-basic {
-  background-color: #f0f8ff; /* Alice blue */
-  padding: 20px;
-  text-align: center;
-  margin: 10px 0;
+  background-color: #f0f8ff; /* Set background color (e.g., #f0f8ff for light blue) */
+  padding: 20px; /* Adjust padding (e.g., 20px for spacing around content) */
+  text-align: center; /* Choose alignment: center, left, or right */
+  margin: 10px 0; /* Set top and bottom margin (e.g., 10px 0 for vertical spacing) */
 }
 
-/* Background Image */
+/* Background Image Module */
+/* Apply background image with color, size, position, and repeat options */
 .background-image {
-  background-image: url('Images/simplebg.jpg');
-  background-color: #ddd;
+  background-image: url('Images/simplebg.jpg'); /* Image path */
+  
+  /* Optional: background-color provides a fallback if image doesn't load */
+  background-color: #ddd; /* Set fallback color (e.g., #ddd for light grey) */
+  
+  /* Choose background size */
+  /* Options: cover (fills the entire area), contain (fits whole image in container), auto (default size) */
   background-size: cover;
+  
+  /* Choose background position */
+  /* Options: center, top, bottom, left, right, or percentages (e.g., 50% 50% for center) */
   background-position: center;
+  
+  /* Choose background repeat option */
+  /* Options: no-repeat (no tiling), repeat (default, tiles in both directions), repeat-x, repeat-y */
   background-repeat: no-repeat;
-  padding: 100px;
-  text-align: center;
-  color: #000000;
-  margin: 10px 0;
+  
+  padding: 100px; /* Adjust padding for spacing around content */
+  text-align: center; /* Choose text alignment */
+  color: #000000; /* Set text color (e.g., #000000 for black text) */
+  margin: 10px 0; /* Set top and bottom margin */
 }
 
-
-/* Background Position */
+/* Background Position Module */
+/* Set custom position without affecting background size or repeat options */
 .background-position {
-  background-image: url('Images/bg.jpg');
-  background-position: center center; /* Centers the image */
+  background-image: url('Images/bg.jpg'); /* Image path */
+  
+  /* Center the image position (alternatives: left top, right bottom, 20% 80%, etc.) */
+  background-position: center center;
+  
+  /* Optional: Disable repetition */
   background-repeat: no-repeat;
-  padding: 100px;
-  text-align: center;
-  color: #fff;
-  margin: 10px 0;
+  
+  padding: 100px; /* Adjust padding for spacing */
+  text-align: center; /* Choose text alignment */
+  color: #fff; /* Set text color (e.g., #fff for white text) */
+  margin: 10px 0; /* Set top and bottom margin */
 }
 
-/* Background Size */
+/* Background Size Module */
+/* Ensure the background image fills the entire container */
 .background-size {
-  background-image: url('https://via.placeholder.com/300');
-  background-size: cover; /* Image covers entire div */
+  background-image: url('https://via.placeholder.com/300'); /* Placeholder image */
+  
+  /* Choose background size */
+  /* Options: cover (fills container), contain (fits whole image), auto (default size) */
+  background-size: cover;
+  
+  /* Center image position (alternative: left, right, percentages) */
   background-position: center;
-  padding: 60px;
-  text-align: center;
-  color: #fff;
-  margin: 10px 0;
+  
+  padding: 60px; /* Adjust padding for content spacing */
+  text-align: center; /* Choose text alignment */
+  color: #fff; /* Set text color */
+  margin: 10px 0; /* Set top and bottom margin */
 }
 
-/* Background Repeat */
+/* Background Repeat Module */
+/* Set a repeated background pattern */
 .background-repeat {
-  background-image: url('https://via.placeholder.com/50');
-  background-repeat: repeat; /* Repeats image */
-  padding: 60px;
-  text-align: center;
-  color: #333;
-  margin: 10px 0;
+  background-image: url('https://via.placeholder.com/50'); /* Small pattern image */
+  
+  /* Enable repetition for a pattern effect */
+  /* Options: repeat (default, tiles in both directions), no-repeat, repeat-x, repeat-y */
+  background-repeat: repeat;
+  
+  padding: 60px; /* Adjust padding for spacing */
+  text-align: center; /* Choose text alignment */
+  color: #333; /* Set text color */
+  margin: 10px 0; /* Set top and bottom margin */
 }
+
