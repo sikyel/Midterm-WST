@@ -1,68 +1,78 @@
-/* styles.css */
-
-/* Text Color */
+/* Text Color Module */
+/* Sets the text color */
 .text-color {
-  color: #333333; /* Dark Gray */
+  color: #333333; /* Dark gray text color */
 }
 
-/* Text Alignment */
+/* Text Alignment Module */
+/* Adjusts text alignment */
 .alignment {
-  text-align: center;
+  text-align: center; /* Options: center, left, right, justify */
 }
 
-/* Text Formatting */
+/* Text Formatting Module */
+/* Sets font family, size, and weight */
 .text-format {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: Arial, sans-serif; /* Font family (e.g., Arial as a sans-serif font) */
+  font-size: 18px; /* Font size (e.g., 18px) */
+  font-weight: 400; /* Font weight (400 is normal; options: 100–900) */
 }
 
-/* Text Spacing */
+/* Text Spacing Module */
+/* Adjusts letter, word spacing, and line height */
 .text-spacing {
-  letter-spacing: 2px;
-  word-spacing: 4px;
-  line-height: 1.5;
+  letter-spacing: 2px; /* Space between letters (e.g., 2px) */
+  word-spacing: 4px; /* Space between words (e.g., 4px) */
+  line-height: 1.5; /* Line height multiplier (e.g., 1.5) */
 }
 
-/* Text Indentation */
+/* Text Indentation Module */
+/* Adds indentation to the first line of text */
 .indentation {
-  text-indent: 30px;
+  text-indent: 30px; /* Indentation size (e.g., 30px) */
 }
 
-/* Letter Spacing */
+/* Letter Spacing Module */
+/* Adjusts space between letters */
 .letter-spacing {
-  letter-spacing: 3px;
+  letter-spacing: 3px; /* Space between letters (e.g., 3px) */
 }
 
-/* Line Height */
+/* Line Height Module */
+/* Sets line height for vertical spacing between lines */
 .line-height {
-  line-height: 1.8;
+  line-height: 1.8; /* Line height multiplier (e.g., 1.8) */
 }
 
-/* Word Spacing */
+/* Word Spacing Module */
+/* Adjusts space between words */
 .word-spacing {
-  word-spacing: 5px;
+  word-spacing: 5px; /* Space between words (e.g., 5px) */
 }
 
-/* White Space */
+/* White Space Control Module */
+/* Controls white-space behavior for text wrapping */
 .white-space {
-  white-space: nowrap; /* Keeps text in one line */
+  white-space: nowrap; /* Keeps text on one line (options: nowrap, normal, pre) */
 }
 
-/* Text Shadow */
+/* Text Shadow Module */
+/* Adds a shadow effect to text */
 .shadow {
-  text-shadow: 2px 2px 4px rgba(10, 1, 1, 0.3);
+  text-shadow: 2px 2px 4px rgba(10, 1, 1, 0.3); /* Offset-X, Offset-Y, Blur, Color */
 }
 
-/* Text Decoration */
+/* Text Decoration Module */
+/* Adds decoration like underline, color, style, and thickness */
 .decoration {
-  text-decoration-line: underline;
-  text-decoration-color: red;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 2px;
+  text-decoration-line: underline; /* Line decoration (e.g., underline) */
+  text-decoration-color: red; /* Decoration color (e.g., red) */
+  text-decoration-style: dotted; /* Line style (e.g., dotted, dashed, solid) */
+  text-decoration-thickness: 2px; /* Thickness of decoration line */
 }
 
-/* Text Transformation */
+/* Text Transformation Module */
+/* Transforms text to uppercase, lowercase, or capitalized */
 .transformation {
-  text-transform: uppercase;
+  text-transform: uppercase; /* Options: uppercase, lowercase, capitalize */
 }
