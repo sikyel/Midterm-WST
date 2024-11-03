@@ -1,84 +1,99 @@
-/* Background Color */
+/* Background Color Module */
+/* Sets a solid background color with padding and text alignment */
 .background-color {
-  background-color: #ffcc00; /* Yellow background */
-  padding: 20px;
-  text-align: center;
+  background-color: #ffcc00; /* Set background color (e.g., #ffcc00 for yellow) */
+  padding: 20px; /* Adjust padding (e.g., 20px for spacing around content) */
+  text-align: center; /* Choose text alignment: center, left, or right */
 }
 
-/* Background Color Fallback */
+/* Background Color with Fallback Module */
+/* Uses a solid color and gradient as fallback for background styling */
 .background-fallback {
-  background-color: #cccccc; /* Light gray */
-  background: linear-gradient(to right, #cccccc, #999999); /* Fallback to gradient */
-  padding: 20px;
-  text-align: center;
-  color: #fff;
+  background-color: #cccccc; /* Fallback solid color (e.g., light gray) */
+  
+  /* Background gradient as an alternative fallback */
+  background: linear-gradient(to right, #cccccc, #999999); /* Light gray to gray gradient */
+  
+  padding: 20px; /* Adjust padding for spacing */
+  text-align: center; /* Choose text alignment */
+  color: #fff; /* Set text color (e.g., white text for readability) */
 }
 
-/* RGB Hover Effect */
+/* RGB Hover Effect Module */
+/* Changes background color on hover using RGB values */
 .rgb-hover {
-  color: #000; /* Black text */
+  color: #000; /* Default text color (e.g., black) */
 }
 .rgb-hover:hover {
-  background-color: rgb(100, 150, 255); /* Light blue background */
+  background-color: rgb(100, 150, 255); /* Light blue background on hover */
 }
 
-/* RGB Text Color */
+/* RGB Text Color Module */
+/* Sets text color using RGB values */
 .rgb-text {
   color: rgb(34, 139, 34); /* Forest green text */
 }
 
-/* RGB Border */
+/* RGB Border Module */
+/* Creates a solid border using RGB values */
 .rgb-border {
   border: 2px solid rgb(255, 69, 0); /* Red border */
-  padding: 10px;
-  margin: 10px;
+  padding: 10px; /* Adjust padding for spacing */
+  margin: 10px; /* Set margin around the border */
 }
 
-/* HSL Button */
+/* HSL Button Module */
+/* Defines button styling with HSL color and hover effect */
 .hsl-button {
   background-color: hsl(120, 50%, 50%); /* Green button */
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
+  color: #fff; /* White text for readability */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Button font size */
 }
 .hsl-button:hover {
   background-color: hsl(120, 50%, 40%); /* Darker green on hover */
 }
 
-/* HSL Gradient */
+/* HSL Gradient Module */
+/* Creates a gradient background with HSL values */
 .hsl-gradient {
   background: linear-gradient(to right, hsl(200, 70%, 60%), hsl(220, 70%, 40%)); /* Blue gradient */
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  color: #fff; /* White text for readability */
+  padding: 20px; /* Adjust padding for spacing */
+  text-align: center; /* Centered text */
 }
 
-/* Hex Hover */
+/* Hex Hover Text Color Module */
+/* Changes text color on hover using hex values */
 .hex-hover {
-  color: #333333;
+  color: #333333; /* Default text color (e.g., dark gray) */
 }
 .hex-hover:hover {
-  color: #ff6600; /* Orange text on hover */
+  color: #ff6600; /* Orange text color on hover */
 }
 
-/* Hex Color Div */
+/* Hex Color Background Module */
+/* Applies a solid background color using hex values */
 .hex-div {
-  background-color: #00ccff; /* Sky blue */
-  padding: 20px;
-  text-align: center;
-  color: #fff;
+  background-color: #00ccff; /* Sky blue background */
+  padding: 20px; /* Adjust padding */
+  text-align: center; /* Centered text */
+  color: #fff; /* White text color for readability */
 }
 
-/* Hex Gradient */
+/* Hex Gradient Module */
+/* Creates a gradient background with hex values */
 .hex-gradient {
   background: linear-gradient(to bottom, #ff66b2, #ffccff); /* Pink gradient */
-  padding: 20px;
-  color: #fff;
-  text-align: center;
+  padding: 20px; /* Adjust padding */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
 }
 
-.button{
-  color: #00ccff;
+/* Button Text Color Module */
+/* Sets button text color using hex values */
+.button {
+  color: #00ccff; /* Sky blue text color */
 }
