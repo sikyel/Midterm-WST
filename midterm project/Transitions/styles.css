@@ -1,47 +1,58 @@
-/*Transition base*/
-.transition-box{
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  background-color: green;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 14px;
-  transition: all 0.3s ease; /*Base transition*/
+/* Transition Base Module */
+/* Defines base styles and a basic transition effect */
+.transition-box {
+  width: 100px; /* Initial width of the box */
+  height: 100px; /* Initial height of the box */
+  margin: 20px; /* Margin around the box */
+  background-color: green; /* Background color */
+  color: #fff; /* Text color */
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  text-align: center; /* Centers text within the box */
+  font-size: 14px; /* Font size for text */
+  
+  /* Base transition: applies to all properties over 0.3s with an ease timing function */
+  transition: all 0.3s ease; /* 'all' means all properties will transition */
 }
 
-.transition-delay{
-  transition-delay: 0.5s;
+/* Transition Delay Module */
+/* Adds a delay before the transition starts */
+.transition-delay {
+  transition-delay: 0.5s; /* Delay before transition begins (e.g., 0.5s) */
 }
 
-.transition-delay:hover{
-  background-color: #ff6347;
+.transition-delay:hover {
+  background-color: #ff6347; /* Changes background color on hover after delay */
 }
 
-.transition-duration{
-  transition-duration: 1.5s;
+/* Transition Duration Module */
+/* Controls how long the transition lasts */
+.transition-duration {
+  transition-duration: 1.5s; /* Duration of transition (e.g., 1.5s) */
 }
 
-.transition-duration:hover{
-  background-color: dodgerblue;
+.transition-duration:hover {
+  background-color: dodgerblue; /* Changes background color with specified duration */
 }
 
-.transition-property{
-  transition-property: width;
-  transition-duration: 0.5s;
+/* Transition Property Module */
+/* Transitions only a specific property */
+.transition-property {
+  transition-property: width; /* Only width will transition */
+  transition-duration: 0.5s; /* Duration for width transition (e.g., 0.5s) */
 }
 
-.transition-property:hover{
-  width: 200px;
+.transition-property:hover {
+  width: 200px; /* Expands width on hover */
 }
 
-.transition-timing-function{
-  transition-timing-function: ease;
+/* Transition Timing Function Module */
+/* Defines the speed curve of the transition */
+.transition-timing-function {
+  transition-timing-function: ease; /* Transition effect: ease, ease-in, ease-out, linear, etc. */
 }
 
-.transition-timing-function:hover{
-  background-color: gold;
+.transition-timing-function:hover {
+  background-color: gold; /* Changes background color with specified timing function */
 }
