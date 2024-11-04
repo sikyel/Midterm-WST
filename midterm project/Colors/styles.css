@@ -1,3 +1,71 @@
+/* Flex Container Styles */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+/* Example Output Style */
+.example {
+  flex: 1;
+}
+
+/* Code Display Style */
+.code {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #333;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Loading Screen Styles */
+.loading-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-screen.active {
+  display: flex;
+}
+
+.loading-screen img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Return Button Style */
+.return-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ffbbdd;
+  color: #5d4294;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.return-button:hover {
+  background-color: #f7c6d9;
+}
+
 /* Background Color Module */
 /* Sets a solid background color with padding and text alignment */
 .background-color {
