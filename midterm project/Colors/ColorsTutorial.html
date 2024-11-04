@@ -5,49 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Color Styling Demo</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Loading Screen Styles */
-    .loading-screen {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: white;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-    }
-
-    .loading-screen.active {
-      display: flex;
-    }
-
-    .loading-screen img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    /* Return Button Style */
-    .return-button {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      background-color: #ffbbdd;
-      color: #5d4294;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .return-button:hover {
-      background-color: #f7c6d9;
-    }
-  </style>
 </head>
 <body>
   <!-- Loading Screen -->
@@ -56,45 +13,159 @@
     <p>Loading, please wait...</p>
   </div>
 
-<body>
-  <div class="background-color">Background Color</div>
-  <div class="background-fallback">Background Color Fallback</div>
-  <p class="rgb-text">RGB Text Color</p>
-  <div class="rgb-border">RGB Border</div>
-  <button class="hsl-button">HSL Button</button>
-  <div class="hsl-gradient">HSL Gradient Background</div>
-  <p class="hex-hover">Hover over me for Hex Color</p>
-  <div class="hex-div">Hex Color Div</div>
-  <div class="hex-gradient">Hex Gradient Background</div>
-  
-   <!-- Return to Main Page Button -->
-   <button class="return-button" onclick="goToMainPage()">Return to Main Page</button>
+  <div class="flex-container">
+    <div class="example background-color">Background Color</div>
+    <div class="code">
+      <pre>
+.background-color {
+  background-color: #ffcc00;
+  padding: 20px;
+  text-align: center;
+}
+      </pre>
+    </div>
+  </div>
 
-   <script>
-     // Array of GIF URLs for random loading screen images
-     const gifUrls = [
-         '../Backgrounds/Images/gif/kurumi.gif',
-         '../Backgrounds/Images/gif/kurumi2.gif',
-         '../Backgrounds/Images/gif/kurumi3.gif'
-     ];
- 
-     // Function to go to the main page with a loading screen
-     function goToMainPage() {
-       const loadingScreen = document.getElementById('loadingScreen');
-       const loadingGif = document.getElementById('loadingGif');
- 
-       // Select a random GIF from the array and display it
-       const randomGif = gifUrls[Math.floor(Math.random() * gifUrls.length)];
-       loadingGif.src = randomGif;
- 
-       // Show loading screen
-       loadingScreen.classList.add('active');
- 
-       // Delay navigation to the main page
-       setTimeout(() => {
-         window.history.back() // Replace with your main page URL
-       }, 1000); // Adjust delay as needed
-     }
-   </script>
+  <div class="flex-container">
+    <div class="example background-fallback">Background Color Fallback</div>
+    <div class="code">
+      <pre>
+.background-fallback {
+  background-color: #cccccc;
+  background: linear-gradient(to right, #cccccc, #999999);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+      </pre>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="example"><p class="rgb-text">RGB Text Color</p></div>
+    <div class="code">
+      <pre>
+.rgb-text {
+  color: rgb(34, 139, 34);
+}
+      </pre>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="example rgb-border">RGB Border</div>
+    <div class="code">
+      <pre>
+.rgb-border {
+  border: 2px solid rgb(255, 69, 0);
+  padding: 10px;
+  margin: 10px;
+}
+      </pre>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="example"><button class="hsl-button">HSL Button</button></div>
+    <div class="code">
+      <pre>
+.hsl-button {
+  background-color: hsl(120, 50%, 50%);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+      </pre>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="example hsl-gradient">HSL Gradient Background</div>
+    <div class="code">
+      <pre>
+.hsl-gradient {
+  background: linear-gradient(to right, hsl(200, 70%, 60%), hsl(220, 70%, 40%));
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+      </pre>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="example"><p class="hex-hover">Hover over me for Hex Color</p></div>
+    <div class="code">
+      <pre>
+.hex-hover {
+  color: #333333;
+}
+.hex-hover:hover {
+  color: #ff6600;
+}
+      </pre>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="example hex-div">Hex Color Div</div>
+    <div class="code">
+      <pre>
+.hex-div {
+  background-color: #00ccff;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+      </pre>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="example hex-gradient">Hex Gradient Background</div>
+    <div class="code">
+      <pre>
+.hex-gradient {
+  background: linear-gradient(to bottom, #ff66b2, #ffccff);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+      </pre>
+    </div>
+  </div>
+
+  <!-- Return to Main Page Button -->
+  <button class="return-button" onclick="goToMainPage()">Return to Main Page</button>
+
+  <script>
+    // Array of GIF URLs for random loading screen images
+    const gifUrls = [
+        '../Backgrounds/Images/gif/kurumi.gif',
+        '../Backgrounds/Images/gif/kurumi2.gif',
+        '../Backgrounds/Images/gif/kurumi3.gif'
+    ];
+
+    // Function to go to the main page with a loading screen
+    function goToMainPage() {
+      const loadingScreen = document.getElementById('loadingScreen');
+      const loadingGif = document.getElementById('loadingGif');
+
+      // Select a random GIF from the array and display it
+      const randomGif = gifUrls[Math.floor(Math.random() * gifUrls.length)];
+      loadingGif.src = randomGif;
+
+      // Show loading screen
+      loadingScreen.classList.add('active');
+
+      // Delay navigation to the main page
+      setTimeout(() => {
+        window.history.back(); // Replace with your main page URL
+      }, 1000); // Adjust delay as needed
+    }
+  </script>
 </body>
 </html>
+
