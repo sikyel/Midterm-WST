@@ -1,3 +1,74 @@
+/* Container for flexbox layout */
+.container {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Space between columns */
+  padding: 20px; /* Padding around the container */
+  flex-grow: 1; /* Allow container to grow */
+}
+
+/* Code box style */
+.code-box {
+  flex: 1; /* Takes up one part of the flex space */
+  margin-right: 20px; /* Space between code and preview */
+  background-color: #f9f9f9; /* Light background for code area */
+  padding: 10px; /* Padding inside code area */
+  border: 1px solid #ccc; /* Border around code area */
+  border-radius: 5px; /* Rounded corners */
+  font-family: monospace; /* Monospace font for code */
+  overflow: auto; /* Adds scroll if content exceeds box */
+  height: 500px; /* Fixed height for the code box */
+}
+
+/* Preview box style */
+.preview-box {
+  flex: 1; /* Takes up one part of the flex space */
+  display: flex; /* Enables flexbox layout for preview */
+  flex-direction: column; /* Aligns items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text within the preview */
+}
+
+/* Loading Screen Styles */
+.loading-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-screen.active {
+  display: flex;
+}
+
+.loading-screen img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Return Button Style */
+.return-button {
+  padding: 10px 20px;
+  background-color: #ffbbdd;
+  color: #5d4294;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.return-button:hover {
+  background-color: #f7c6d9;
+}
+
 /* Transition Base Module */
 /* Defines base styles and a basic transition effect */
 .transition-box {
