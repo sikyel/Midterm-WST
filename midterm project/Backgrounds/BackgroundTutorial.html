@@ -3,51 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Background Styling in CSS</title>
+  <title>Background Styling in CSS - Tutorial</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Loading Screen Styles */
-    .loading-screen {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: white;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-    }
-
-    .loading-screen.active {
-      display: flex;
-    }
-
-    .loading-screen img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    /* Return Button Style */
-    .return-button {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      background-color: #ffbbdd;
-      color: #5d4294;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .return-button:hover {
-      background-color: #f7c6d9;
-    }
-  </style>
 </head>
 <body>
   <!-- Loading Screen -->
@@ -57,11 +14,85 @@
   </div>
 
   <!-- Main Content -->
-  <div class="background-basic">Basic Background</div>
-  <div class="background-image">Background Image</div>
-  <div class="background-position">Background Position</div>
-  <div class="background-size">Background Size</div>
-  <div class="background-repeat">Background Repeat</div>
+  <div class="container">
+    <!-- Basic Background Example -->
+    <div class="example">
+      <div class="code-display">
+        <pre><code>
+.background-basic {
+  background-color: #f0f8ff;
+  padding: 20px;
+  text-align: center;
+}
+        </code></pre>
+      </div>
+      <div class="output-display background-basic">Basic Background</div>
+    </div>
+
+    <!-- Background Image Example -->
+    <div class="example">
+      <div class="code-display">
+        <pre><code>
+.background-image {
+  background-image: url('Images/simplebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+  color: #000000;
+}
+        </code></pre>
+      </div>
+      <div class="output-display background-image">Background Image</div>
+    </div>
+
+    <!-- Background Position Example -->
+    <div class="example">
+      <div class="code-display">
+        <pre><code>
+.background-position {
+  background-image: url('Images/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 100px;
+  color: #ffffff;
+}
+        </code></pre>
+      </div>
+      <div class="output-display background-position">Background Position</div>
+    </div>
+
+    <!-- Background Size Example -->
+    <div class="example">
+      <div class="code-display">
+        <pre><code>
+.background-size {
+  background-image: url('https://via.placeholder.com/300');
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  color: #ffffff;
+}
+        </code></pre>
+      </div>
+      <div class="output-display background-size">Background Size</div>
+    </div>
+
+    <!-- Background Repeat Example -->
+    <div class="example">
+      <div class="code-display">
+        <pre><code>
+.background-repeat {
+  background-image: url('https://via.placeholder.com/50');
+  background-repeat: repeat;
+  padding: 60px;
+  color: #333333;
+}
+        </code></pre>
+      </div>
+      <div class="output-display background-repeat">Background Repeat</div>
+    </div>
+  </div>
 
   <!-- Return to Main Page Button -->
   <button class="return-button" onclick="goToMainPage()">Return to Main Page</button>
@@ -88,7 +119,7 @@
 
       // Delay navigation to the main page
       setTimeout(() => {
-        window.history.back() // Replace with your main page URL
+        window.history.back(); // Replace with your main page URL
       }, 1000); // Adjust delay as needed
     }
   </script>
