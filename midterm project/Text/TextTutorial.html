@@ -1,102 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Styling in CSS</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Loading Screen Styles */
-    .loading-screen {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: white;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-    }
-
-    .loading-screen.active {
-      display: flex;
-    }
-
-    .loading-screen img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    /* Return Button Style */
-    .return-button {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      background-color: #ffbbdd;
-      color: #5d4294;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .return-button:hover {
-      background-color: #f7c6d9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling Demo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-  <!-- Loading Screen -->
-  <div class="loading-screen" id="loadingScreen">
-    <img id="loadingGif" src="" alt="Loading...">
-    <p>Loading, please wait...</p>
-  </div>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <img id="loadingGif" src="" alt="Loading...">
+        <p>Loading, please wait...</p>
+    </div>
 
-<body>
-  <h1 class="text-color alignment">CSS Text Styling Demo</h1>
+    <h1 class="text-color alignment">CSS Text Styling Demo</h1>
 
-  <div class="text-format">
-    <p class="text-color alignment">Text formatting in CSS allows you to control how text appears on a webpage.</p>
-    <p class="text-spacing">You can adjust the spacing, alignment, decoration, and transformation of your text.</p>
-    <p class="indentation letter-spacing line-height">Each style aspect can be controlled individually to achieve a custom look.</p>
-    <p class="word-spacing white-space">Whether adjusting word spacing or controlling how text wraps, CSS provides flexibility.</p>
-    <p class="shadow">You can even add shadows for enhanced readability or aesthetics.</p>
-    <p class="decoration">Decorations can include underlines, overlines, and more.</p>
-    <p class="transformation">Text transformation enables capitalization or case changes.</p>
-  </div>
+    <div class="container">
+        <!-- Code Display -->
+        <div class="code">
+            <pre><code>
+.text-color {
+  color: #333333; /* Dark gray text color */
+}
 
-   <!-- Return to Main Page Button -->
-   <button class="return-button" onclick="goToMainPage()">Return to Main Page</button>
+.alignment {
+  text-align: center; /* Options: center, left, right, justify */
+}
 
-   <script>
-     // Array of GIF URLs for random loading screen images
-     const gifUrls = [
-         '../Backgrounds/Images/gif/kurumi.gif',
-         '../Backgrounds/Images/gif/kurumi2.gif',
-         '../Backgrounds/Images/gif/kurumi3.gif'
-     ];
- 
-     // Function to go to the main page with a loading screen
-     function goToMainPage() {
-       const loadingScreen = document.getElementById('loadingScreen');
-       const loadingGif = document.getElementById('loadingGif');
- 
-       // Select a random GIF from the array and display it
-       const randomGif = gifUrls[Math.floor(Math.random() * gifUrls.length)];
-       loadingGif.src = randomGif;
- 
-       // Show loading screen
-       loadingScreen.classList.add('active');
- 
-       // Delay navigation to the main page
-       setTimeout(() => {
-         window.history.back() // Replace with your main page URL
-       }, 1000); // Adjust delay as needed
-     }
-   </script>
+.text-format {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.text-spacing {
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  line-height: 1.5;
+}
+
+.indentation {
+  text-indent: 30px;
+}
+
+.letter-spacing {
+  letter-spacing: 3px;
+}
+
+.line-height {
+  line-height: 1.8;
+}
+
+.word-spacing {
+  word-spacing: 5px;
+}
+
+.white-space {
+  white-space: nowrap;
+}
+
+.shadow {
+  text-shadow: 2px 2px 4px rgba(10, 1, 1, 0.3);
+}
+
+.decoration {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+}
+
+.transformation {
+  text-transform: uppercase;
+}
+            </code></pre>
+        </div>
+
+        <!-- Output Display -->
+        <div class="output">
+            <h2>Styled Text Output</h2>
+            <div class="text-format">
+                <p class="text-color alignment">Text formatting in CSS allows you to control how text appears on a webpage.</p>
+                <p class="text-spacing">You can adjust the spacing, alignment, decoration, and transformation of your text.</p>
+                <p class="indentation letter-spacing line-height">Each style aspect can be controlled individually to achieve a custom look.</p>
+                <p class="word-spacing white-space">Whether adjusting word spacing or controlling how text wraps, CSS provides flexibility.</p>
+                <p class="shadow">You can even add shadows for enhanced readability or aesthetics.</p>
+                <p class="decoration">Decorations can include underlines, overlines, and more.</p>
+                <p class="transformation">Text transformation enables capitalization or case changes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Return to Main Page Button -->
+    <button class="return-button" onclick="goToMainPage()">Return to Main Page</button>
+
+    <script>
+        // Array of GIF URLs for random loading screen images
+        const gifUrls = [
+            '../Backgrounds/Images/gif/kurumi.gif',
+            '../Backgrounds/Images/gif/kurumi2.gif',
+            '../Backgrounds/Images/gif/kurumi3.gif'
+        ];
+
+        // Function to go to the main page with a loading screen
+        function goToMainPage() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            const loadingGif = document.getElementById('loadingGif');
+
+            // Select a random GIF from the array and display it
+            const randomGif = gifUrls[Math.floor(Math.random() * gifUrls.length)];
+            loadingGif.src = randomGif;
+
+            // Show loading screen
+            loadingScreen.classList.add('active');
+
+            // Delay navigation to the main page
+            setTimeout(() => {
+                window.history.back(); // Replace with your main page URL
+            }, 1000); // Adjust delay as needed
+        }
+    </script>
 </body>
 </html>
